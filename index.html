@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirdmanWeb | 鳥人間の知見共有プラットフォーム</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sky-gradient" aria-hidden="true"></div>
+
+    <div class="page">
+        <header class="hero reveal" data-reveal="hero">
+            <p class="eyebrow">Birdman Knowledge Network</p>
+            <h1>BirdmanWebへようこそ</h1>
+            <p class="lead">
+                鳥人間に関する知見を集め、未来のチームへ渡すための
+                プラットフォームです。
+            </p>
+            <!-- <a class="cta-button" href="#features">機能を見る</a> -->
+
+            <ul class="hero-points">
+                <li>質問と回答を知恵袋で循環</li>
+                <li>記事投稿で技術を体系化</li>
+                <li>チームを越えてノウハウ継承</li>
+            </ul>
+        </header>
+
+        <main class="main-content">
+            <section class="card intro reveal" id="about">
+                <h2>このサイトについて</h2>
+                <p>
+                    鳥人間界隈の皆様。お世話になっております。
+                    鳥人間に従事する方々の情報蓄積、情報交換を主としたWebサイトを作成しました。
+                </p>
+                <p>
+                    鳥人間に関する情報は本来X（旧Twitter）などのSNSに散らばっていることが多いですが、
+                    Xは流動的で情報が流れていってしまいやすく、過去の情報を探したり見返すことはほぼ不可能です。
+                    そこで、鳥人間に関する情報のみに特化したサイトを作成することで、アクセスのしやすさと情報の蓄積を両立できると考え本サイトを作成しました。
+                </p>
+            </section>
+
+            <section class="features-section reveal" id="features">
+                <h2>機能一覧</h2>
+                <div class="feature-grid">
+                    <article class="feature-card reveal" data-delay="0">
+                        <h3>知恵袋機能</h3>
+                        <p>
+                            鳥人間に関する疑問、意見を聞きたい内容を自由に投稿できます。
+                            電装班の無線運用、周波数帯の共有、本番での水分補給、チームマネジメントなど、
+                            現場で使える話題を素早く共有できます。
+                        </p>
+                        <div class="feature-images">
+                            <img src="image/chie/スクリーンショット 2026-04-11 23.01.14.png" alt="知恵袋機能の画面1">
+                            <p>自分で新しく知恵袋を作成し、議論をスタートできます。</p>
+                            <img src="image/chie/スクリーンショット 2026-04-11 23.03.03.png" alt="知恵袋機能の画面2">
+                            <p>他人の作成した知恵袋に回答を投稿し、知見を蓄積できます。</p>
+                        </div>
+                    </article>
+
+                    <article class="feature-card reveal" data-delay="140">
+                        <h3>記事投稿機能</h3>
+                        <p>
+                            鳥人間に関する技術記事や体験談を投稿できます。
+                            本番での対応事例、初期設定、チーム運営の工夫、実装時の注意点など、
+                            実践的なノウハウを残していきましょう。
+                        </p>
+                        <div class="feature-images">
+                            <img src="image/kiji/スクリーンショット 2026-04-12 16.53.19.png" alt="記事投稿機能の画面1">
+                            <p>テーマ単位で記事を整理し、後から検索しやすく管理できます。</p>
+                            <img src="image/kiji/スクリーンショット 2026-04-12 16.54.23.png" alt="記事投稿機能の画面2">
+                            <p>技術記事にはPDF保存や画像添付が可能です。</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="card rules-section reveal" id="rules">
+                <h2>禁止事項</h2>
+                <div class="rules-list">
+                    <div class="rule-item reveal" data-delay="0">
+                        <h3>特定の人の誹謗中傷</h3>
+                        <p>特定の誰かを誹謗中傷するコメントを投稿しないでください。</p>
+                    </div>
+                    <div class="rule-item reveal" data-delay="120">
+                        <h3>部内秘密、読売から非公開指定された情報</h3>
+                        <p>
+                            設計プログラム、部内で何十年も醸成した秘伝情報などの部内秘密、
+                            また読売から一般公開を禁止されている情報は公開しないでください。
+                        </p>
+                    </div>
+                </div>
+                <p class="rules-note reveal" data-delay="200">
+                    これらの書き込みを見つけた場合、管理人が削除します。
+                    繰り返し注意しても改善されない場合は、強制退会およびアクセス禁止の対象となります。
+                </p>
+            </section>
+
+            <section class="card privacy-section reveal" id="privacy">
+                <h2>個人情報について</h2>
+                <p>
+                    BirdManWebでは、認証時にGoogleアカウントを使用します。
+                    認証機能には Firebase Authentication を利用しています。
+                </p>
+                <p>
+                    万が一このWebサイト側のデータベース情報に問題が起きた場合でも、
+                    Googleアカウント自体の認証管理は Google 側で行われます。
+                    そのため、Google本体に重大な障害がない限り、認証情報はGoogleの保護対象です。
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const delay = entry.target.getAttribute('data-delay');
+                    if (delay) {
+                        entry.target.style.transitionDelay = `${delay}ms`;
+                    }
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.16,
+            rootMargin: '0px 0px -8% 0px'
+        });
+
+        revealElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+
+</html>
